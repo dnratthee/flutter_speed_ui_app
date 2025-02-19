@@ -32,9 +32,7 @@ class _HomeUIState extends State<HomeUI> {
                   color: Color(0xFFF89AEE),
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return A01PageUI();
-                    }));
+                        MaterialPageRoute(builder: (context) => A01PageUI()));
                   }),
               SizedBox(height: 25),
               MyButton(

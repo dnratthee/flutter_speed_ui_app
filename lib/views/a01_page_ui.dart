@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/a02_page_ui.dart';
 import 'package:flutter_speed_ui_app/widgets/my_button.dart';
 
 class A01PageUI extends StatefulWidget {
@@ -61,7 +62,7 @@ class _A01PageUIState extends State<A01PageUI> {
             ),
             SizedBox(height: 50),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              padding: EdgeInsets.symmetric(horizontal: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -76,7 +77,8 @@ class _A01PageUIState extends State<A01PageUI> {
                       bottomLeft: Radius.circular(10),
                     ),
                     onPressed: () {
-                      // Navigator.pop(context);
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => A02PageUI()));
                     },
                   ),
                   MyButton(
@@ -85,7 +87,7 @@ class _A01PageUIState extends State<A01PageUI> {
                     fontColor: Color(0xFF545151),
                     fontSize: 22,
                     fontWeight: FontWeight.w600,
-                    width: 155,
+                    width: 175,
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(10),
                       bottomRight: Radius.circular(10),
