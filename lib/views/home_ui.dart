@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
 import 'package:flutter_speed_ui_app/widgets/my_button.dart';
 
 class HomeUI extends StatefulWidget {
@@ -31,8 +30,7 @@ class _HomeUIState extends State<HomeUI> {
                   text: 'Go to A Page',
                   color: Color(0xFFF89AEE),
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => A01PageUI()));
+                    Navigator.of(context).pushNamed('/a01');
                   }),
               SizedBox(height: 25),
               MyButton(

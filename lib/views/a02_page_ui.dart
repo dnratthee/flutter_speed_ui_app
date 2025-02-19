@@ -77,7 +77,7 @@ class _A02PageUIState extends State<A02PageUI> {
               fontWeight: FontWeight.w700,
               redius: 15,
               onPressed: () {
-                // Navigator.pop(context);
+                Navigator.of(context).pushNamed('/');
               },
             ),
             SizedBox(height: 25),

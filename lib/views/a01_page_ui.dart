@@ -77,8 +77,7 @@ class _A01PageUIState extends State<A01PageUI> {
                       bottomLeft: Radius.circular(10),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => A02PageUI()));
+                      Navigator.of(context).pushNamed('/a02');
                     },
                   ),
                   MyButton(
