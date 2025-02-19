@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/views/a02_page_ui.dart';
 import 'package:flutter_speed_ui_app/widgets/my_button.dart';
 
 class A01PageUI extends StatefulWidget {

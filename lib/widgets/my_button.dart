@@ -10,9 +10,11 @@ class MyButton extends StatelessWidget {
   final double? fontSize;
   final Color? fontColor;
   final FontWeight fontWeight;
+  final String fontFamily;
   final double redius;
   final EdgeInsetsGeometry padding;
   final BorderRadiusGeometry? borderRadius;
+  final Color? shadowColor;
 
   MyButton({
     super.key,
@@ -20,11 +22,13 @@ class MyButton extends StatelessWidget {
     this.child,
     this.onPressed,
     this.color = Colors.black,
+    this.shadowColor = Colors.transparent,
     this.width = double.infinity,
     this.height = 58,
     this.fontSize = 15,
     this.fontColor = Colors.white,
     this.fontWeight = FontWeight.w500,
+    this.fontFamily = 'outfit',
     this.redius = 10,
     this.padding = const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
     BorderRadiusGeometry? borderRadius,
@@ -42,11 +46,15 @@ class MyButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: borderRadius!,
         ),
+        shadowColor: shadowColor,
       ),
       child: child ??
           Text(text,
               style: TextStyle(
-                  fontSize: fontSize, color: fontColor, fontWeight: fontWeight),
+                  fontSize: fontSize,
+                  color: fontColor,
+                  fontWeight: fontWeight,
+                  fontFamily: fontFamily),
               textAlign: TextAlign.center),
     );
   }

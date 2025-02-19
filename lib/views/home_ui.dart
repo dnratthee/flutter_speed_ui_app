@@ -36,22 +36,30 @@ class _HomeUIState extends State<HomeUI> {
               MyButton(
                   text: 'Go to B Page',
                   color: Color(0xFF1F41BB),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/b01');
+                  }),
               SizedBox(height: 25),
               MyButton(
                   text: 'Go to C Page',
                   color: Color(0xFF00B140),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/c01');
+                  }),
               SizedBox(height: 25),
               MyButton(
                   text: 'Go to D Page',
                   color: Color(0xFF35C2C1),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/d01');
+                  }),
               SizedBox(height: 25),
               MyButton(
                   text: 'Go to E Page',
                   color: Color(0xFFF69515),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/e01');
+                  }),
             ],
           ),
         ),
