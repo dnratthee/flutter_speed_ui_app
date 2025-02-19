@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/home_ui.dart';
+import 'package:flutter_speed_ui_app/views/home_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.itimTextTheme(
+        textTheme: GoogleFonts.outfitTextTheme(
           Theme.of(context).textTheme,
         ),
         scaffoldBackgroundColor: Colors.white,
