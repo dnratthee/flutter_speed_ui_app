@@ -1,3 +1,14 @@
 # flutter_speed_ui_app
 
-A new Flutter project.
+Flutter Speed UI App [2-2567 '201' 619208 code by 6519710002 DNRatthee]
+
+## Technologies and Tools
+
+- [Flutter](https://flutter.dev/)
+- [Dart](https://dart.dev/)
+
+## Project Screenshots
+
+### Home Page
+
+![Home Page](screenshots/HomeUI.png)
