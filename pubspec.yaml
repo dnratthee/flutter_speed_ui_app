@@ -1,0 +1,32 @@
+name: flutter_speed_ui_app
+description: "Flutter Speed UI App by DNRatthee"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_fonts: ^6.2.1
+  font_awesome_flutter: ^10.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/images/
+  - assets/images/a/
+  - assets/images/b/
+  - assets/images/c/
+  - assets/images/d/
+  - assets/images/e/
+  - assets/images/home/
+  - assets/icon/
